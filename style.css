@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Важно: предотвращает поломку размеров при padding */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 20px 40px;  
+    background-color: #ffffff;      
+}
+
+.hero-section {
+    position: relative;         
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    overflow: hidden;     
+    min-height: 790px;
+    min-width: 1200px;
+    flex-direction: column;
+}
+
+.hero-bg {
+    position: absolute;     
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    z-index: 1;            
+}
+
+.hero-content {
+    justify-content: center;
+    position: relative;
+    z-index: 2;         
+    text-align: center;
+    color: #ffffff;
+
+    padding: 40px 20px; 
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0 24px 0; 
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 650px; 
+    margin: 0 auto 30px auto; 
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;             
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;      
+    transition: all 0.3s ease; 
+    z-index: 2;              
+}
+
+.btn-filled {
+    background-color: #a8997a; 
+    color: #ffffff;          
+    border: 2px solid #a8997a;
+}
+
+.btn-outlined {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff; 
+}
+
+
