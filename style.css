@@ -184,7 +184,7 @@
 }
 
 .about-us-info button:hover {
-    background: #94866b;;
+    background: #94866b;
 }
 
 .about-us-img {
@@ -201,6 +201,7 @@
     justify-content: center;
     background-color: #a79770;
     align-items: center;
+    overflow:hidden;
 }
 
 .holyday {
@@ -222,11 +223,274 @@
     margin: 20px 40px ;
 }
 .holyday-greeds {
+    width: 1140px;
     display: grid;
 } 
 .greeds {
-    display: flex;
-    grid-template-columns: repeat(3, 1fr); 
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
     gap: 20px; 
+
+}
+
+.greed {
+    height: 453px;
+    position: flex;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+
+
+.greed-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 155px;
+    width: 100%;
+    height: 151px;
+    z-index: auto;
+    background-color: #00000070;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} 
+
+.greed-info h4{ 
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.greed-info p{ 
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+
+/*services*/
+
+.services-container {
     overflow:hidden;
+    position: relative;
+   
+}
+
+
+.services h2 {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;;
+    padding: 40px 20px; 
+} 
+
+
+.grid-cards  {
+    max-width: 1140px; 
+    margin: -250px auto 0; 
+    padding: 0 15px; 
+    position: relative;
+    z-index: 3;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    z-index: 3;
+} 
+
+.card-info {
+    background: #fff;
+    text-align: center;
+    padding: 20px ;
+    border: 1px solid grey;
+}
+.card-info img {
+    width: 100%; /* Картинка адаптируется под ширину карточки */
+    height: auto;
+}
+
+.card-info h4 {
+    font-size: 18px;
+    margin: 20px 0 0 ;
+}
+.card-info p {
+    font-size: 18px;
+    margin: 20px  ;
+
+}
+.card-info a {
+    font-size: 14px;
+    margin: 60px 87px  0 ;
+    color: #a8997a;
+    
+}
+
+
+
+
+
+
+/* Настройки списка */
+.services-info-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;;
+    width: 100%;
+    
+}
+
+.services-info {
+    display: flex;
+    margin:50px 0;
+
+    
+}
+
+.servicess {
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: space-between;
+    padding: 30px;
+    gap: 90px;
+}
+
+
+
+.my-custom-list {
+    list-style: none; 
+    padding-left: 0;
+    margin: 0;
+}
+.my-custom-list li {
+    position: relative;
+    padding-left: 22px; 
+    margin-bottom: 10px; 
+    font-family: sans-serif; 
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333; 
+}
+.my-custom-list .list-icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 12px; 
+    height: 12px;
+    fill: #a8997a; 
+}
+
+.service-info2 button {
+    margin: 33px 309px 0 0;
+    padding: 10px 35px ;
+    border-radius: 30px;
+    font-size: 14px;
+    margin: 27px 338px 0 0;
+    background-color: #a8997a;
+    color: #ffffff;
+    border:none;
+    cursor: pointer;
+
+}
+
+.service-info2 button:hover {
+    background: #94866b;
+}
+.service-info2 ul, .service-info1 ul{
+    padding-top: 25px;
+}
+
+.service-info2 h3, .service-info1 h3{
+    font-size: 30px;
+}
+
+
+/* camp-journey-info */
+.camp-journey-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    
+
+}
+
+.camp-journey {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+
+ 
+}
+
+
+.camp-journey h2{
+    font-size: 60px;
+    color: #ffffff;
+}
+
+
+.journey-list {
+    list-style: none; 
+    padding-left: 0;
+    margin: 0;
+}
+.journey-list li {
+    position: relative;
+    padding-left: 22px; 
+    margin-bottom: 10px; 
+    font-family: sans-serif; 
+    font-size: 24px;
+    line-height: 22px;
+    color: #ffffff; 
+}
+
+
+
+.journey-list .list-icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 22px; 
+    height: 22px; 
+    fill: #a8997a; 
+}
+
+
+
+.camp-journey button {
+    margin: 28px 835px 60px 0;
+    padding: 13px 53px 14px 52px ;
+    border-radius: 30px;
+    font-size: 14px;
+    margin: 27px 338px 0 0;
+    background-color: #a8997a;
+    color: #ffffff;
+    border:none;
+    cursor: pointer;
+
+}
+
+.camp-journey button:hover {
+    background: #94866b;
+}
+
+
+
+/*journey-container*/
+.journey-container {
+    display: flex;
+    justify-content: center;
+}
+.journey-info {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
 }
