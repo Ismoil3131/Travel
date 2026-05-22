@@ -100,6 +100,11 @@
     border: 2px solid #ffffff; 
     text-decoration: none;
 }
+.btn-outlined:hover {
+    background: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease;
+}
 
 .hero-features p {
     color: #ffffff;
@@ -109,7 +114,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 50px;
+    margin: 50px;
     width: 100%;
 
 
@@ -149,10 +154,14 @@
     justify-content: center;
     margin-top: 50px;
     align-items: center ;
+    width: 100%;
 }
 
 .about-us {
-    display: flex
+    display: flex;
+    width: 1140px;
+    justify-content: space-between;
+     
 
 }
 
@@ -383,8 +392,9 @@
 }
 
 .service-info2 button {
+    width: 210px ;
     margin: 33px 309px 0 0;
-    padding: 10px 35px ;
+    padding: 10px 35px 10px 35px ;
     border-radius: 30px;
     font-size: 14px;
     margin: 27px 338px 0 0;
@@ -597,6 +607,12 @@
   font-weight: bold;
   font-size: 13px;
   letter-spacing: 1px;
+}
+
+.btn-outline:hover {
+    background: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease;
 }
 
 .contact-form-wrapper {
