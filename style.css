@@ -15,7 +15,12 @@
     justify-content: space-between; 
     align-items: center;            
     padding: 20px 40px;  
-    background-color: #ffffff;      
+    background-color: #ffffff;  
+    
+    
+    width: 100%;
+    max-width: 1140px; 
+    margin: 0 auto;
 }
 
 .hero-section {
@@ -115,10 +120,11 @@
     justify-content: center;
     gap: 20px;
     margin: 50px;
-    width: 100%;
-
 
 }
+
+
+
 .hero-blocks  {
     display: flex;
     flex-direction: column;
@@ -131,6 +137,7 @@
     width: 160px;      
     min-height: 120px;         
     box-sizing: border-box; 
+    transition: 0.3s ease;
 }
 
 .hero-blocks img {
@@ -145,6 +152,10 @@
 .hero-blocks p {
     margin: 0;
     font-size: 14px;
+
+}
+.hero-blocks:hover {
+    transform:scale(1.1)
 }
 
 /* Section about us*/
@@ -244,28 +255,47 @@
 
 }
 
-.greed {
-    height: 453px;
-    position: flex;
-    grid-template-columns: repeat(3, 1fr); 
+
+.greeds {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px;
+    justify-content: center; 
+    width: 100%;
 }
 
 
+.greed {
+    width: 100%;      
+    max-width: 368px;  
+    height: 453px;     
+    position: relative; 
+    overflow: hidden;
+    margin: 0 auto;    
+}
+
+
+.greeds .greed img {
+    width: 100%;
+    height: 100% ;
+    object-fit: cover; 
+}
 
 .greed-info {
     display: flex;
     flex-direction: column;
-    position: relative;
-    bottom: 155px;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 151px;
-    z-index: auto;
-    background-color: #00000070;
-    
+    background-color: rgba(0, 0, 0, 0.7); 
     text-align: center;
     align-items: center;
     justify-content: center;
-} 
+    z-index: 2;
+}
 
 .greed-info h4{ 
     font-size: 24px;
@@ -518,7 +548,6 @@
 .journey-img {
     width: 100%;
     border-radius: 50%; 
-    overflow: hidden;
     max-width: 250px; 
     margin: auto;
 }
@@ -691,7 +720,7 @@
 .footer-info1 {
     display: flex;
     justify-content: center;
-    margin: 49px 361px;
+
 } 
 
 .footer-info1 p {
